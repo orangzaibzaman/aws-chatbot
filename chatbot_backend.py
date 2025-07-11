@@ -31,3 +31,7 @@ def chatbot_conversation(input_prompt, memory):
     chatbot_reply = llm_conversation.invoke(input_prompt)
     return chatbot_reply['response']
 
+## References
+- [Bedrock Converse API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html)
+- [Bedrock Invoke Amazon Titan Text on Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime_example_bedrock-runtime_Converse_AmazonTitanText_section.html)
+- [DeepSeek models](https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-deepseek.html)
