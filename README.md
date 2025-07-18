@@ -21,7 +21,6 @@ AWS Chatbot with DeepSeek, Langchain &amp; Streamlit
     - PyYAML
 
 ## Tech Stack & Libraries
-
 Bedrock Converse API: Standardisation to use any models
 
 Streamlit: Python library to build Front-end custom web apps for ML & Data Science 
@@ -34,8 +33,11 @@ LangChain: predict + run
 
 Bedrock + DeepSeek: For back-end as FM
 
-## Run
+## Prerequisites
+Install dependencies by running below command:
+pip install -r requirements.txt
 
+## Run
 streamlit run chatbot_frontend.py
 
 ## Demo
