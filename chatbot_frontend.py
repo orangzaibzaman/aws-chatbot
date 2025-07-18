@@ -31,7 +31,7 @@ if input_text:
     st.session_state.chat_history.append({"role":"user", "text":input_text}) 
 
 #6 Call the model
-    chat_response = backend.chatbot_conversation(input_text=input_text, memory=st.session_state.memory)
+    chat_response = backend.chatbot_conversation(input_prompt=input_text, memory=st.session_state.memory)
      
     with st.chat_message("assistant"): 
         st.markdown(chat_response) 
