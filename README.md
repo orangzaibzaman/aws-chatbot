@@ -1,6 +1,8 @@
 # aws-chatbot
 AWS Chatbot with DeepSeek, Langchain &amp; Streamlit
 
+## AWS Account: 242506057753
+
 ## Architecture
 
 ![image.png](attachment:879f8f42-dea5-415e-b5d4-4754cbda2de7:image.png)
