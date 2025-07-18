@@ -1,10 +1,9 @@
-#1 import Langchain Modules
-
+#1 import Langchain Modules 
 from langchain.memory import ConversationSummaryBufferMemory
 from langchain.chains import ConversationChain
 from langchain_aws import ChatBedrockConverse
 
-#2 Write a function for invoking model- client connection with Bedrock with profile, model_id & Inference params- model_kwargs
+#2 Write a function for invoking model-client connection with Bedrock with profile, model_id & Inference params- model_kwargs
 def chatbot():
     llm = ChatBedrockConverse(
         credentials_profile_name = 'default',
@@ -27,7 +26,6 @@ def chatbot_conversation(input_prompt, memory):
     memory = memory,
     verbose = True
 )
-#5 Chat response using invoke
     chatbot_reply = llm_conversation.invoke(input_prompt)
     return chatbot_reply['response']
 
